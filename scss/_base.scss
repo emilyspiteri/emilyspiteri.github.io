@@ -1,0 +1,28 @@
+//
+//base styles
+//
+
+//typography
+$sans-serif: 'helvetica', 'arial', sans-serif;
+$serif:'Georgia','Garamond', 'Hoefler Text', 'times new roman', serif;
+
+//colors
+$colors: (
+  blue: rgb(52, 152, 219),
+  green: rgb(22, 160, 133),
+  red: rgb(231, 76, 60),
+  yellow: rgb(241, 196, 15),
+  purple: rgb(142, 68, 173),
+  navy: rgb(40, 55, 71),
+  white: rgba(240,240,240,0.7),
+);
+
+body{
+  background:map-get($colors,navy);
+  color:map-get($colors,white);
+}
+
+h1{
+  font-family:$sans-serif;
+  //color:map-get($colors, navy);
+}
