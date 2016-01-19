@@ -1,9 +1,8 @@
 //
 // main sass file
 //
-
+@import "mixins";
 @import "base";
 @import "layout";
 @import "module";
 @import "state";
-@import "theme";

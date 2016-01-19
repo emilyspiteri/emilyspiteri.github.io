@@ -3,26 +3,36 @@
 //
 
 //typography
-$sans-serif: 'helvetica', 'arial', sans-serif;
+$sans-serif: 'Source Sans Pro','helvetica', 'arial', sans-serif;
 $serif:'Georgia','Garamond', 'Hoefler Text', 'times new roman', serif;
 
 //colors
 $colors: (
   blue: rgb(52, 152, 219),
-  green: rgb(22, 160, 133),
-  red: rgb(231, 76, 60),
-  yellow: rgb(241, 196, 15),
+  green: rgb(20, 182, 64),
+  red: rgb(219, 55, 10),
+  yellow: rgb(251, 227, 27),
   purple: rgb(142, 68, 173),
   navy: rgb(40, 55, 71),
-  white: rgba(240,240,240,0.7),
+  white: rgba(255,255,255,0.8),
 );
 
 body{
   background:map-get($colors,navy);
   color:map-get($colors,white);
+  font-family:$sans-serif;
+  border-top:35px solid map-get($colors,green);
+  padding:0;
+  margin:0;
 }
 
 h1{
   font-family:$sans-serif;
-  //color:map-get($colors, navy);
+  border-bottom: solid .5em map-get($colors, red);
+  font-weight:300;
+  font-size:5em;
+}
+
+h2{
+  border-bottom: solid .5em map-get($colors, yellow);
 }

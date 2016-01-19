@@ -16,7 +16,9 @@ gulp.task('serve', ['sass'], function() {
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {
     return gulp.src("./scss/*.scss")
-        .pipe(sass())
+        .pipe(sass({
+          outputStyle: 'nested'
+        }))
         .pipe(gulp.dest("./"))
         .pipe(browserSync.stream());
 });

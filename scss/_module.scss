@@ -1,0 +1,32 @@
+ul#color_choices{
+  width:100%;
+  padding:0;
+  margin:0;
+  li{
+    width:100%;
+    padding:0;
+    margin:0 0 2em 0;
+    border-bottom:solid 4em white;
+    list-style-type: none;
+  }
+  .blue{
+    color:map-get($colors, blue);
+    border-color:map-get($colors, blue);
+  }
+  .green{
+    color:map-get($colors, green);
+    border-color:map-get($colors, green);
+  }
+  .yellow{
+    color:map-get($colors, yellow);
+    border-color:map-get($colors, yellow);
+  }
+  .red{
+    color:map-get($colors, red);
+    border-color:map-get($colors, red);
+  }
+  .purple{
+    color:map-get($colors, purple);
+    border-color:map-get($colors, purple);
+  }
+}
