@@ -30,3 +30,35 @@ ul#color_choices{
     border-color:map-get($colors, purple);
   }
 }
+
+ul.profile{
+  margin:0;
+  padding:0;
+  li{
+    text-align:center;
+    list-style-type: none;
+    @include font-size(32px);
+    margin-bottom:1em;
+  }
+  li.profile-image{
+    img{
+      max-width:50%;
+      display:block;
+      margin:0 auto;
+      border-radius:50%;
+    }
+  }
+}
+
+ul.social{
+  list-style-type: none;
+  margin:50px auto 0;
+  padding:0 12.5%;
+  background:map-get($colors, navy);
+  li{
+    display:inline-block;
+    width:25%;
+    text-align:center;
+    vertical-align:middle;
+  }
+}

@@ -9,19 +9,20 @@ $serif:'Georgia','Garamond', 'Hoefler Text', 'times new roman', serif;
 //colors
 $colors: (
   blue: rgb(52, 152, 219),
-  green: rgb(20, 182, 64),
+  green: rgb(26, 188, 156),
   red: rgb(219, 55, 10),
-  yellow: rgb(251, 227, 27),
-  purple: rgb(142, 68, 173),
+  yellow: rgb(241, 196, 15),
+  purple: rgb(125, 60, 152),
   navy: rgb(40, 55, 71),
   white: rgba(255,255,255,0.8),
+  off-white: rgba(255,245,245,1),
 );
 
 body{
-  background:map-get($colors,navy);
-  color:map-get($colors,white);
+  background:map-get($colors,off-white);
+  color:map-get($colors,navy);
   font-family:$sans-serif;
-  border-top:35px solid map-get($colors,green);
+  border-top:35px solid map-get($colors,red);
   padding:0;
   margin:0;
 }
@@ -30,9 +31,20 @@ h1{
   font-family:$sans-serif;
   border-bottom: solid .5em map-get($colors, red);
   font-weight:300;
-  font-size:5em;
+  @include font-size(72px);
+  text-align:center;
 }
 
 h2{
   border-bottom: solid .5em map-get($colors, yellow);
+}
+
+a{
+  text-decoration:none;
+  color:map-get($colors, off-white);
+  @include font-size(24px);
+  line-height: 3;
+  &:hover{
+    color:map-get($colors, red);
+  }
 }

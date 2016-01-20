@@ -3,3 +3,22 @@
 //
 
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700);
+
+//breakpoints
+$bp-medium: 540px;
+@mixin bp-large {
+  @media only screen and (min-width: $bp-medium) {
+    @content;
+  }
+}
+
+//standardize rem
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
