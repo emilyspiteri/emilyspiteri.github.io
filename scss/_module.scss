@@ -1,33 +1,77 @@
+section{
+  padding-bottom:8em;
+}
+section#draft1{
+  border-top:35px solid map-get($colors,green);
+  background:map-get($colors,white-pink);
+  color:map-get($colors,red);
+  font-family:$sans-serif;
+  h1{
+    border-bottom: solid .5em map-get($colors, navy);
+  }
+}
+
+section#draft2{
+  border-top:35px solid map-get($colors,navy);
+  background:map-get($colors,white-blue);
+  color:map-get($colors,red);
+  font-family:$sans-serif;
+  h1{
+    border-bottom: solid .5em map-get($colors, red);
+  }
+}
+
+section#draft3{
+  border-top:35px solid map-get($colors,blue);
+  background:map-get($colors,white-yellow);
+  color:map-get($colors,navy);
+  font-family:$sans-serif;
+  h1{
+    border-bottom: solid .5em map-get($colors, green);
+  }
+}
+
 ul#color_choices{
   width:100%;
   padding:0;
   margin:0;
+  overflow:hidden;
   li{
     width:100%;
     padding:0;
     margin:0 0 2em 0;
-    border-bottom:solid 4em white;
     list-style-type: none;
   }
-  .blue{
-    color:map-get($colors, blue);
-    border-color:map-get($colors, blue);
+  //make the nested ul items 50%width
+  ul{
+    padding:0;
+    margin:0;
   }
-  .green{
-    color:map-get($colors, green);
-    border-color:map-get($colors, green);
+  li ul li{
+    width:33%;
+    display:inline-block;
+    border-bottom:solid 4em white;
+    margin:0;
+    padding:0;
+    float:left;
   }
-  .yellow{
-    color:map-get($colors, yellow);
-    border-color:map-get($colors, yellow);
+  ul.navy{
+    @include ul-color-tryptich(navy);
   }
-  .red{
-    color:map-get($colors, red);
-    border-color:map-get($colors, red);
+  ul.purple{
+    @include ul-color-tryptich(purple);
   }
-  .purple{
-    color:map-get($colors, purple);
-    border-color:map-get($colors, purple);
+  ul.blue{
+    @include ul-color-tryptich(blue);
+  }
+  ul.green{
+    @include ul-color-tryptich(green);
+  }
+  ul.red{
+    @include ul-color-tryptich(red);
+  }
+  ul.yellow{
+    @include ul-color-tryptich(yellow);
   }
 }
 

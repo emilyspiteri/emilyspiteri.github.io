@@ -1,15 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700);
 body {
-  background: #fff5f5;
-  color: #283747;
-  font-family: "Source Sans Pro", "helvetica", "arial", sans-serif;
-  border-top: 35px solid #db370a;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  font-family: "Source Sans Pro", "helvetica", "arial", sans-serif; }
 
 h1 {
   font-family: "Source Sans Pro", "helvetica", "arial", sans-serif;
-  border-bottom: solid 0.5em #db370a;
   font-weight: 300;
   font-size: 72px;
   font-size: 4.5rem;
@@ -20,7 +16,7 @@ h2 {
 
 a {
   text-decoration: none;
-  color: #fff5f5;
+  color: #f5f5ff;
   font-size: 24px;
   font-size: 1.5rem;
   line-height: 3; }
@@ -32,31 +28,107 @@ a {
   margin: 0 auto;
   max-width: 740px; }
 
+section {
+  padding-bottom: 8em; }
+
+section#draft1 {
+  border-top: 35px solid #1abc9c;
+  background: #fff5f5;
+  color: #db370a;
+  font-family: "Source Sans Pro", "helvetica", "arial", sans-serif; }
+  section#draft1 h1 {
+    border-bottom: solid 0.5em #34495e; }
+
+section#draft2 {
+  border-top: 35px solid #34495e;
+  background: #f5f5ff;
+  color: #db370a;
+  font-family: "Source Sans Pro", "helvetica", "arial", sans-serif; }
+  section#draft2 h1 {
+    border-bottom: solid 0.5em #db370a; }
+
+section#draft3 {
+  border-top: 35px solid #3498db;
+  background: #fffaeb;
+  color: #34495e;
+  font-family: "Source Sans Pro", "helvetica", "arial", sans-serif; }
+  section#draft3 h1 {
+    border-bottom: solid 0.5em #1abc9c; }
+
 ul#color_choices {
   width: 100%;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  overflow: hidden; }
   ul#color_choices li {
     width: 100%;
     padding: 0;
     margin: 0 0 2em 0;
-    border-bottom: solid 4em white;
     list-style-type: none; }
-  ul#color_choices .blue {
-    color: #3498db;
-    border-color: #3498db; }
-  ul#color_choices .green {
-    color: #1abc9c;
-    border-color: #1abc9c; }
-  ul#color_choices .yellow {
-    color: #f1c40f;
-    border-color: #f1c40f; }
-  ul#color_choices .red {
-    color: #db370a;
-    border-color: #db370a; }
-  ul#color_choices .purple {
+  ul#color_choices ul {
+    padding: 0;
+    margin: 0; }
+  ul#color_choices li ul li {
+    width: 33%;
+    display: inline-block;
+    border-bottom: solid 4em white;
+    margin: 0;
+    padding: 0;
+    float: left; }
+  ul#color_choices ul.navy li:nth-of-type(1) {
+    color: #5d6d7e;
+    border-color: #5d6d7e; }
+  ul#color_choices ul.navy li:nth-of-type(2) {
+    color: #34495e;
+    border-color: #34495e; }
+  ul#color_choices ul.navy li:nth-of-type(3) {
+    color: #283747;
+    border-color: #283747; }
+  ul#color_choices ul.purple li:nth-of-type(1) {
+    color: #a569bd;
+    border-color: #a569bd; }
+  ul#color_choices ul.purple li:nth-of-type(2) {
     color: #7d3c98;
     border-color: #7d3c98; }
+  ul#color_choices ul.purple li:nth-of-type(3) {
+    color: #6c3483;
+    border-color: #6c3483; }
+  ul#color_choices ul.blue li:nth-of-type(1) {
+    color: #5dade2;
+    border-color: #5dade2; }
+  ul#color_choices ul.blue li:nth-of-type(2) {
+    color: #3498db;
+    border-color: #3498db; }
+  ul#color_choices ul.blue li:nth-of-type(3) {
+    color: #2874a6;
+    border-color: #2874a6; }
+  ul#color_choices ul.green li:nth-of-type(1) {
+    color: #48c9b0;
+    border-color: #48c9b0; }
+  ul#color_choices ul.green li:nth-of-type(2) {
+    color: #1abc9c;
+    border-color: #1abc9c; }
+  ul#color_choices ul.green li:nth-of-type(3) {
+    color: #148f77;
+    border-color: #148f77; }
+  ul#color_choices ul.red li:nth-of-type(1) {
+    color: #ec7063;
+    border-color: #ec7063; }
+  ul#color_choices ul.red li:nth-of-type(2) {
+    color: #db370a;
+    border-color: #db370a; }
+  ul#color_choices ul.red li:nth-of-type(3) {
+    color: #b03a2e;
+    border-color: #b03a2e; }
+  ul#color_choices ul.yellow li:nth-of-type(1) {
+    color: #f4d03f;
+    border-color: #f4d03f; }
+  ul#color_choices ul.yellow li:nth-of-type(2) {
+    color: #f1c40f;
+    border-color: #f1c40f; }
+  ul#color_choices ul.yellow li:nth-of-type(3) {
+    color: #b7950b;
+    border-color: #b7950b; }
 
 ul.profile {
   margin: 0;
@@ -77,7 +149,7 @@ ul.social {
   list-style-type: none;
   margin: 50px auto 0;
   padding: 0 12.5%;
-  background: #283747; }
+  background: #34495e; }
   ul.social li {
     display: inline-block;
     width: 25%;

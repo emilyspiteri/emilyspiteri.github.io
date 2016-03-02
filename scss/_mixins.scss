@@ -22,3 +22,24 @@ $bp-medium: 540px;
   font-size: $size;
   font-size: calculateRem($size);
 }
+
+//list item colors
+@mixin li-color-example($color-ex){
+  color:map-get($colors, $color-ex);
+  border-color:map-get($colors, $color-ex);
+}
+
+@mixin ul-color-tryptich($color-family){
+  li:nth-of-type(1){
+    color:map-get($colors, #{$color-family}-light);
+    border-color:map-get($colors, #{$color-family}-light);
+  }
+  li:nth-of-type(2){
+    color:map-get($colors, $color-family);
+    border-color:map-get($colors, $color-family);
+  }
+  li:nth-of-type(3){
+    color:map-get($colors, #{$color-family}-dark);
+    border-color:map-get($colors, #{$color-family}-dark);
+  }
+}

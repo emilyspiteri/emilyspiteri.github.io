@@ -9,27 +9,37 @@ $serif:'Georgia','Garamond', 'Hoefler Text', 'times new roman', serif;
 //colors
 $colors: (
   blue: rgb(52, 152, 219),
+  blue-dark: rgb(40, 116, 166),
+  blue-light: rgb(93, 173, 226),
   green: rgb(26, 188, 156),
+  green-dark: rgb(20, 143, 119),
+  green-light: rgb(72, 201, 176),
   red: rgb(219, 55, 10),
+  red-dark: rgb(176, 58, 46),
+  red-light: rgb(236, 112, 99),
   yellow: rgb(241, 196, 15),
+  yellow-dark: rgb(183, 149, 11),
+  yellow-light: rgb(244, 208, 63),
   purple: rgb(125, 60, 152),
-  navy: rgb(40, 55, 71),
+  purple-dark: rgb(108, 52, 131),
+  purple-light: rgb(165, 105, 189),
+  navy: rgb(52, 73, 94),
+  navy-dark: rgb(40, 55, 71),
+  navy-light: rgb(93, 109, 126),
   white: rgba(255,255,255,0.8),
-  off-white: rgba(255,245,245,1),
+  white-pink: rgba(255,245,245,1),
+  white-blue: rgba(245,245,255,1),
+  white-yellow: rgba(255,250,240,1),
 );
 
 body{
-  background:map-get($colors,off-white);
-  color:map-get($colors,navy);
-  font-family:$sans-serif;
-  border-top:35px solid map-get($colors,red);
   padding:0;
   margin:0;
+  font-family:$sans-serif;
 }
 
 h1{
   font-family:$sans-serif;
-  border-bottom: solid .5em map-get($colors, red);
   font-weight:300;
   @include font-size(72px);
   text-align:center;
@@ -41,7 +51,7 @@ h2{
 
 a{
   text-decoration:none;
-  color:map-get($colors, off-white);
+  color:map-get($colors, white-blue);
   @include font-size(24px);
   line-height: 3;
   &:hover{
